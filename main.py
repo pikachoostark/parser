@@ -12,7 +12,7 @@ def get_info(i):
     data = requests.get(url, headers={'User-Agent': UserAgent().chrome})
     data.encoding = 'utf-8'
 
-    sleep(3)
+    sleep(30)
 
     soup = BeautifulSoup(data.text, 'lxml')
     films = soup.findAll('div', class_="styles_root__ti07r")
