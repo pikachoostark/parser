@@ -43,8 +43,10 @@ def get_info(i):
 
         if re.findall('\d{4}–...', year):
             year = re.findall('\d{4}–...', year)[0]
-        else:
+        elif re.findall('\d{4}', year):
             year = re.findall('\d{4}', year)[0]
+        else:
+            year = None
 
         is_rate = film.find('div', class_="styles_content__nT2IG") \
             .find('div', class_="styles_upper__j8BIs") \
