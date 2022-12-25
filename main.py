@@ -78,7 +78,7 @@ if __name__ == '__main__':
             cnt += 1
             sleep(3)
         else:
-            print("Whoops, got a captcha! Sleeping for a minute...")
-            sleep(60)
+            print("Whoops, got a captcha! Sleeping for 10 minutes...")
+            sleep(600)
 
     print("Successfully parsed 20 pages!")
